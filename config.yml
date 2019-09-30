@@ -20,6 +20,11 @@ steps:
       action_id: intro_issue
       title: A Brief Review of Containerization
       body: introduction-and-review.md
+    - type: respond
+      with: go-to-issue.md
+      data:
+        issueURL: '%actions.intro_issue.data.html_url%'
+
   - title: Review of Containerization
     description: Preparing workloads for Kubernetes
     event: issues.closed
