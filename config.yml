@@ -11,9 +11,21 @@ before:
     title: Welcome!
     body: welcome.md
 steps:
-  - title: First step
-    description: The first step in your course
-    event: issues.assigned
-    link: '{{ repoUrl }}'
+  - title: Welcome!
+    description: Please review this issue.
+    event: issues.closed
+    link: '{{ repoUrl }}/issues/1'
     actions:
-      - type: closeIssue
+    - type: createIssue
+      action_id: intro_issue
+      title: A Brief Review of Containerization
+      body: introduction-and-review.md
+  - title: Review of Containerization
+    description: Preparing workloads for Kubernetes
+    event: issues.closed
+    link: '{{ repoUrl }}/issues/2'
+    actions:
+    - type: createIssue
+      action_id: encrypt_issue
+      title: Encrypting the KUBECONFIG File
+      body: encrypt.md  
