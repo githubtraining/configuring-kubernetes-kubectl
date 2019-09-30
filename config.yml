@@ -1,0 +1,19 @@
+title: Configuring Kubernetes kubectl
+tagline: A brand new course on Learning Lab
+description: >-
+  This course leads the student through the steps necessary to use the
+  Kubernetes kubectl command from within an Actions workflow.
+template:
+  repo: configuring-kubernetes-kubectl-template
+  name: configuring-kubernetes-kubectl
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
