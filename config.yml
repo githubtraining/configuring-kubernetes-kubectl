@@ -29,3 +29,12 @@ steps:
       action_id: encrypt_issue
       title: Encrypting the KUBECONFIG File
       body: encrypt.md  
+  - title: Review of Containerization
+    description: Preparing workloads for Kubernetes
+    event: issues.closed
+    link: '{{ repoUrl }}/issues/3'
+    actions:
+    - type: createIssue
+      action_id: encrypt_issue
+      title: Encrypting the KUBECONFIG File
+      body: decrypt.md  
